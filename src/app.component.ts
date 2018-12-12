@@ -1,12 +1,13 @@
 import app from './app.config';
 
-require('./app.component.css');
+import './app.component.css';
 
 app.component('app',{
   template: require('./app.component.html'),
   bindings:{},
   controller: class AppComponent {
-    contructor(){}
+    constructor(){
+    }
     static get $inject() {
       return [];
     }
