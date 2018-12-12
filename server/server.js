@@ -10,7 +10,7 @@ var expressSession = require('express-session');
 var mongoStore = require('connect-mongo')({ session: expressSession });
 var mongoose = require('mongoose');
 
-app.use(express.static(path.resolve(__dirname, 'public')));
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 mongoose.connect('mongodb://localhost:32768/auth', { useNewUrlParser: true });
 var db = mongoose.connection; //Saves the connection as a variable to use
