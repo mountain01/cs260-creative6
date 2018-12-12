@@ -7,6 +7,11 @@ const app = angular.module('app', [uiRouter])
 
     $stateProvider
       .state({
+        name:'login',
+        url:'/login',
+        component: 'login'
+      })
+      .state({
         name: 'home',
         url: '/',
         component: 'home'
