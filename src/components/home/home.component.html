@@ -1,3 +1,11 @@
-<p>
-  Home Component
-</p>
+<div class="container d-flex justify-content-center">
+  <h1 ng-if="$ctrl.user">Welcome {{$ctrl.user.username}}</h1>
+  <div ng-if="!$ctrl.user" class="d-flex flex-column">
+    <h2>
+    	Not Authenticated. Please Log in
+    </h2>
+    <div>
+      <a ui-sref="login" class="mr-3">Login</a><a ui-sref="register">Register</a>
+    </div>
+  </div>
+</div>
