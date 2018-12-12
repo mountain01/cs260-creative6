@@ -12,6 +12,11 @@ const app = angular.module('app', [uiRouter])
         component: 'login'
       })
       .state({
+        name: 'register',
+        url:'/register',
+        component:'register'
+      })
+      .state({
         name: 'home',
         url: '/',
         component: 'home'

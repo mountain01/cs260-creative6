@@ -4,6 +4,9 @@ import './components/home/home.component';
 import './app.component';
 import './components/login/login.component';
 import './components/header/header.component';
+import './components/register/register.component';
+
+import './services/user.service';
 
 angular.bootstrap(document,[app.name]);
 
